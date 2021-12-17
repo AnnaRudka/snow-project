@@ -97,3 +97,23 @@
 .post-navigation{
     background-color: $color-white;
 }
+
+.footer{
+    height: 15rem;
+    background-color: $color-grey-light;
+    &-info{
+        text-align: center;
+        padding: 5rem;
+        margin: 0 auto;
+        &__contacts i{
+            font-size: 1.6rem;
+            color:  $color-text-grey-light;
+        }
+        &__copyright{
+            font-size: 1.4rem;
+            color: $color-text-grey-dark;
+            font-family: "Work Sans";
+        }
+    }
+    
+}

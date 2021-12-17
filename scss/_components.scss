@@ -19,13 +19,6 @@
         & a{
           text-transform: uppercase;  
         }
-        & a:hover{
-          color: $color-blue; 
-        }
-        & a:active{
-          color: $color-blue;
-        font-weight: 500;  
-        }
     }
 }
 
@@ -88,14 +81,46 @@
 
 .post-comments{
     background-color: $color-white;
+    padding: 10rem;
+    & article{
+        padding: 0;
+        margin: 0 auto;
+    }
+    &-item__photo{
+        padding: 0.5rem;
+        background-color: gray;
+        border-radius: 50%;
+        width: 15%;
+        & img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
 }
 
 .post-new-comment{
     background-color: $color-grey-light;
+    padding: 10rem;
+    & article{
+        padding: 0;
+        margin: 0 auto;
+    }
 }
 
 .post-navigation{
+    padding: 0 10rem;
     background-color: $color-white;
+    height: 10rem;
+    padding-top: 4rem;
+    font-size: 1.4rem;
+    &__all{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 900;
+    }
+    &__next{
+        text-align: right;
+    }
 }
 
 .footer{

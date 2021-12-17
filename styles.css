@@ -15,11 +15,6 @@
     padding-top: 4rem; }
     .header__nav-box a {
       text-transform: uppercase; }
-    .header__nav-box a:hover {
-      color: #00a2ff; }
-    .header__nav-box a:active {
-      color: #00a2ff;
-      font-weight: 500; }
 
 .post-image img {
   width: 100%;
@@ -66,13 +61,39 @@
     font-family: "Work Sans"; }
 
 .post-comments {
-  background-color: #fff; }
+  background-color: #fff;
+  padding: 10rem; }
+  .post-comments article {
+    padding: 0;
+    margin: 0 auto; }
+  .post-comments-item__photo {
+    padding: 0.5rem;
+    background-color: gray;
+    border-radius: 50%;
+    width: 15%; }
+    .post-comments-item__photo img {
+      width: 100%;
+      border-radius: 50%; }
 
 .post-new-comment {
-  background-color: #ebebeb; }
+  background-color: #ebebeb;
+  padding: 10rem; }
+  .post-new-comment article {
+    padding: 0;
+    margin: 0 auto; }
 
 .post-navigation {
-  background-color: #fff; }
+  padding: 0 10rem;
+  background-color: #fff;
+  height: 10rem;
+  padding-top: 4rem;
+  font-size: 1.4rem; }
+  .post-navigation__all {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900; }
+  .post-navigation__next {
+    text-align: right; }
 
 .footer {
   height: 15rem;
@@ -102,4 +123,20 @@ html {
 body {
   box-sizing: border-box;
   line-height: 1;
-  height: 100px; }
+  height: 100px;
+  font-family: "Work Sans"; }
+
+a:hover {
+  color: #00a2ff; }
+
+a:active {
+  color: #00a2ff;
+  font-weight: 500; }
+
+h2 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  line-height: 84px;
+  color: #171717;
+  font-weight: 700;
+  font-family: "Playfair Display"; }

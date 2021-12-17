@@ -21,16 +21,49 @@
       color: #00a2ff;
       font-weight: 500; }
 
-.content-image {
-  margin-bottom: 10rem;
-  max-height: 56rem; }
-  .content-image img {
-    width: 100%;
-    height: auto;
-    display: block; }
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block; }
 
 .post-text {
+  padding: 10rem;
   background-color: #f6f6f6; }
+  .post-text article {
+    padding: 0;
+    font-size: 1.8rem;
+    margin: 0 auto; }
+    .post-text article h1 {
+      font-size: 3.8rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-family: "Playfair Display";
+      padding-bottom: 2rem; }
+  .post-text__details {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Work Sans";
+    text-transform: uppercase;
+    margin: 0; }
+    .post-text__details-item {
+      padding-right: 4rem; }
+  .post-text__content {
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #4b4b4b;
+    font-family: "Work Sans"; }
+    .post-text__content p {
+      padding-bottom: 3rem;
+      margin: 0; }
+    .post-text__content-quote {
+      font-family: "Playfair Display";
+      font-style: italic;
+      font-size: 2rem; }
+  .post-text__contacts {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Work Sans"; }
 
 .post-comments {
   background-color: #fff; }

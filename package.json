@@ -1,0 +1,14 @@
+{
+  "name": "snow_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss styles.css -w"
+  },
+  "author": "Anna Rudka",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}

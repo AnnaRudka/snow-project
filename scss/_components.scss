@@ -1,0 +1,56 @@
+.wrapper{
+    min-height: 100%;
+    overflow:hidden;
+}
+
+.header{
+    padding: 0 10rem;
+    background-color: $color-white;
+    height: 10rem;
+    font-size: 1.4rem;
+    &__logo-box{
+        padding-top: 3rem;
+    }
+    &__logo{
+        display: block;
+    }
+    &__nav-box {
+        padding-top: 4rem;
+        & a{
+          text-transform: uppercase;  
+        }
+        & a:hover{
+          color: $color-blue; 
+        }
+        & a:active{
+          color: $color-blue;
+        font-weight: 500;  
+        }
+    }
+}
+
+.content-image{
+    margin-bottom: 10rem;
+    max-height: 56rem;
+    & img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+.post-text{
+    background-color: $color-grey-light;
+}
+
+.post-comments{
+    background-color: $color-white;
+}
+
+.post-new-comment{
+    background-color: $color-grey-light;
+}
+
+.post-navigation{
+    background-color: $color-white;
+}

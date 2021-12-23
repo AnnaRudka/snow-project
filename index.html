@@ -3,117 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" 
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Snow</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header row no-gutters">
-        <div class="header__logo-box col-lg-6 col-md-3">
-          <img src="img/logo.png" alt="Logo" class="header__logo">
+      <header class="header">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="header__logo-box col-lg-6 col-md-3">
+              <img src="img/logo.png" alt="Logo" class="header__logo">
+            </div>
+            <nav class="header__nav-box col-lg-6 col-md-9">
+              <ul class="row">
+                <li class="col-md-2"><a href="#" aria-current="page">Home</a></li>
+                <li class="col-md-2"><a href="#">Work</a></li>
+                <li class="col-md-2"><a href="#">About</a></li>
+                <li class="col-md-2"><a href="#">Blog</a></li>
+                <li class="col-md-2"><a href="#">Contact</a></li>
+                <li class="col-md-2"><a href="#">Buy&nbsp;theme</a></li>
+              </ul>      
+            </nav>
+          </div>
         </div>
-        <nav class="header__nav-box col-lg-6 col-md-9">
-          <ul class="row">
-            <li class="col-md-2"><a href="#" aria-current="page">Home</a></li>
-            <li class="col-md-2"><a href="#">Work</a></li>
-            <li class="col-md-2"><a href="#">About</a></li>
-            <li class="col-md-2"><a href="#">Blog</a></li>
-            <li class="col-md-2"><a href="#">Contact</a></li>
-            <li class="col-md-2"><a href="#">Buy&nbsp;theme</a></li>
-          </ul>      
-        </nav>
       </header>    
       <main>
-          <section class="post-image">
+          <div class="post-image">
             <img src="./img/winter.jpg" alt="Winter">
-          </section>
-          <section class="post-text row">
-            <article class="col-lg-8 col-md-10 col-sm-12">
-              <h1>Why you should Always First</h1>
-              <div class="post-text__details">
-                <span class="post-text__details-item">May 25, 2016 </span>
-                <span class="post-text__details-item">Lifestyle</span>
-                <span class="post-text__details-item">2 Comments</span>
+          </div>
+          <section>
+            <div class="container">
+              <div class="post-text row">
+                <article class="col-lg-8 col-md-10 col-sm-12">
+                  <h1>Why you should Always First</h1>
+                  <div class="post-text__details">
+                    <span class="post-text__details-item">May 25, 2016 </span>
+                    <span class="post-text__details-item">Lifestyle</span>
+                    <span class="post-text__details-item">2 Comments</span>
+                  </div>
+                  <div class="post-text__content">
+                    <p >
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus orci a purus lacinia 
+                      consectetur. Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt 
+                      magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdiet. Proin iaculis, nibh 
+                      eleifend elementum pulvinar, erat nisl consequat quam, ac ornare est sem nec libero. Fusce ac 
+                      sagittis quam. Phasellus mattis, nunc a venenatis laoreet, est ipsum consectetur turpis, in ullam 
+                      corper urna tortor eu purus.
+                    </p>
+                    <p>Quisque cursus risus id ante fermentum, in auctor quam consectetur. Vestibulum est nisi, tempus ac 
+                      vehicula sit amet, blandit et sapien. Ut congue dui enim, at viverra nisl tempor a. Donec in enim nec 
+                      massa lacinia porta. Nullam lobortis, enim aliquam congue bibendum, libero turpis tincidunt enim, 
+                      vel dapibus justo lectus et risus. Proin eget mi a tortor laoreet dictum.
+                    </p>
+                    <p class="post-text__content-quote">Donec consectetur  arcu eu diam cursus consectetur.  Interdum  malesuada faucibus. 
+                      Morbi dapibus eros vitae nisi blandit lacinia.
+                    </p>
+                    <p>Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, 
+                      rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. 
+                      Donec in purus elementum, sagittis magna sit amet, auctor enim. Duis purus ex, interdum ac lacus 
+                      in, ullamcorper vestibulum urna. Duis ornare nec purus ut laoreet.
+                    </p>
+                  </div>
+                  <div class="post-text__contacts">
+                    <p>Share: 
+                    <span><a href="#">Facebook, </a></span>
+                    <span><a href="#">Twitter, </a></span>
+                    <span><a href="#">Pinterest</a></span>
+                    </p>
+                  </div>
+                </article>
               </div>
-              <div class="post-text__content">
-                <p >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rhoncus orci a purus lacinia 
-                  consectetur. Vestibulum rutrum ex in odio placerat dictum. Morbi sit amet tortor mollis, tincidunt 
-                  magna a, iaculis nisl. Cras varius odio a arcu rutrum, nec posuere lacus imperdiet. Proin iaculis, nibh 
-                  eleifend elementum pulvinar, erat nisl consequat quam, ac ornare est sem nec libero. Fusce ac 
-                  sagittis quam. Phasellus mattis, nunc a venenatis laoreet, est ipsum consectetur turpis, in ullam 
-                  corper urna tortor eu purus.
-                </p>
-                <p>Quisque cursus risus id ante fermentum, in auctor quam consectetur. Vestibulum est nisi, tempus ac 
-                  vehicula sit amet, blandit et sapien. Ut congue dui enim, at viverra nisl tempor a. Donec in enim nec 
-                  massa lacinia porta. Nullam lobortis, enim aliquam congue bibendum, libero turpis tincidunt enim, 
-                  vel dapibus justo lectus et risus. Proin eget mi a tortor laoreet dictum.
-                </p>
-                <p class="post-text__content-quote">Donec consectetur  arcu eu diam cursus consectetur.  Interdum  malesuada faucibus. 
-                  Morbi dapibus eros vitae nisi blandit lacinia.
-                </p>
-                <p>Pellentesque viverra nisl a erat volutpat commodo. Etiam sem justo, pellentesque egestas finibus at, 
-                  rutrum efficitur ex. Donec facilisis magna in mauris fermentum, sit amet porttitor lorem dictum. 
-                  Donec in purus elementum, sagittis magna sit amet, auctor enim. Duis purus ex, interdum ac lacus 
-                  in, ullamcorper vestibulum urna. Duis ornare nec purus ut laoreet.
-                </p>
-              </div>
-              <div class="post-text__contacts">
-                <p>Share: 
-                <span><a href="#">Facebook, </a></span>
-                <span><a href="#">Twitter, </a></span>
-                <span><a href="#">Pinterest</a></span>
-                </p>
-              </div>
-            </article>
-          </section>
-          <section class="post-comments">
-            <article class="col-lg-8 col-md-10 col-sm-12">
-              <h2>Comments:</h2>
-              <div class="post-comments-item row">
-                <div class="post-comments-item__photo class="col-lg-3 col-md-2 col-sm-2">
-                  <img  src="img/user1.jpg" alt="User1"></img>
-                </div>
-                <div class="post-comments-item__content class="col-lg-9 col-md-10 col-sm-10"></div>
-              </div>
-            </article>
-          </section>
-          <section class="post-new-comment">
-            <article class="col-lg-8 col-md-10 col-sm-12">
-              <h2>Leave a Comment:</h2>
-            </article>
-          </section>
-          <section class="post-navigation">
-            <div class="row">
-              <div class="post-navigation__prev col-lg-5 col-md-5 col-sm-5"><a href="#">&#60; Previous post </a></div>
-              <div class="post-navigation__all col-lg-2 col-md-2 col-sm-2"><a href="#">&#11820; </a></div>
-              <div class="post-navigation__next col-lg-5 col-md-5 col-sm-5"><a href="#">Next post &#62;</a></div>
             </div>
           </section>
+          <section class="post-comments">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-8 col-md-10 col-sm-12">
+                  <h2>Comments:</h2>
+                  <div class="post-comments-item row">
+                    <div class="post-comments-item__photo class="col-lg-3 col-md-2 col-sm-2">
+                      <img  src="img/user1.jpg" alt="User1"></img>
+                    </div>
+                    <div class="post-comments-item__content class="col-lg-9 col-md-10 col-sm-10"></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="post-new-comment">
+            <div class="container">
+              <div class="row">
+                <article class="col-lg-8 col-md-10 col-sm-12">
+                  <h2>Leave a Comment:</h2>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row post-navigation">
+                <div class="post-navigation__prev col-lg-5 col-md-5 col-sm-5"><a href="#">&#60; Previous post </a></div>
+                <div class="post-navigation__all col-lg-2 col-md-2 col-sm-2"><a href="#">&#11820; </a></div>
+                <div class="post-navigation__next col-lg-5 col-md-5 col-sm-5"><a href="#">Next post &#62;</a></div>
+              </div>
+            </div> 
+          </section>
       </main>
-
-      <footer class="footer row">
-        <div class="footer-info col-lg-4 col-md-6 col-sm-12">
-          <p class="footer-info__contacts">        
-            <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
-            <span><a href="#"><i class="fab fa-twitter"></i></a></span>
-            <span><a href="#"><i class="fab fa-google"></i></span>
-            <span><a href="#"><i class="fab fa-behance"></i></a></span>
-            <span><a href="#"><i class="fab fa-pinterest"></i></a></span>
-            <!-- <span><a href="#"><i class="fab fa-instagram"></a></span> -->
-          </p>
-          <p class="footer-info__copyright">Copyright © 2016. Created by Unvab</p>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-info col-lg-4 col-md-6 col-sm-12">
+              <div class="footer-info__contacts">        
+                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span><a href="#"><i class="fab fa-google"></i></span>
+                <span><a href="#"><i class="fab fa-behance"></i></a></span>
+                <span><a href="#"><i class="fab fa-pinterest"></i></a></span>
+                <!-- <span><a href="#"><i class="fab fa-instagram"></a></span> -->
+              </div>
+              <div class="footer-info__copyright">
+                <p>Copyright © 2016. Created by Unvab</p>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
-    </div>
   </body>
 </html>

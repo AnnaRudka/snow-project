@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" 
@@ -17,20 +15,24 @@
     <title>Snow</title>
   </head>
   <body>
-      <header class="header">
+      <header class="header"> 
         <div class="container">
-          <div class="row no-gutters">
-            <div class="header__logo-box col-lg-6 col-md-3">
+          <div class="header__container">
+            <div class="header__logo-box">
               <img src="img/logo.png" alt="Logo" class="header__logo">
             </div>
-            <nav class="header__nav-box col-lg-6 col-md-9">
-              <ul class="row">
-                <li class="col-md-2"><a href="#" aria-current="page">Home</a></li>
-                <li class="col-md-2"><a href="#">Work</a></li>
-                <li class="col-md-2"><a href="#">About</a></li>
-                <li class="col-md-2"><a href="#">Blog</a></li>
-                <li class="col-md-2"><a href="#">Contact</a></li>
-                <li class="col-md-2"><a href="#">Buy&nbsp;theme</a></li>
+            <nav class="header__nav-box">
+              <input id="nav-toggle" type="checkbox" />
+              <label class="header__nav-btn" for="nav-toggle">
+                <span></span>
+              </label>
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" aria-current="page">Home</a></li>
+                <li class="header__nav-item"><a href="#">Work</a></li>
+                <li class="header__nav-item"><a href="#">About</a></li>
+                <li class="header__nav-item"><a href="#">Blog</a></li>
+                <li class="header__nav-item"><a href="#">Contact</a></li>
+                <li class="header__nav-item"><a href="#">Buy&nbsp;theme</a></li>
               </ul>      
             </nav>
           </div>
@@ -89,11 +91,22 @@
               <div class="row">
                 <article class="col-lg-8 col-md-10 col-sm-12">
                   <h2>Comments:</h2>
-                  <div class="post-comments-item row">
-                    <div class="post-comments-item__photo class="col-lg-3 col-md-2 col-sm-2">
+                  <div class="comment row">
+                    <div class="comment-photo class="col-lg-3 col-md-2 col-sm-2">
                       <img  src="img/user1.jpg" alt="User1"></img>
                     </div>
-                    <div class="post-comments-item__content class="col-lg-9 col-md-10 col-sm-10"></div>
+                    <div class="comment-content class="col-lg-9 col-md-10 col-sm-10">
+                      <div class="comment-content__details">
+                        <p>John Leonard</p>
+                        <p>May 31, 2016</p>
+                        <button type="button">reply</button>
+                      </div>
+                      <div class="comment-content__text">
+                        Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna 
+                        hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante
+                        id. Donec orci arcu, sagittis ut finibus vitae.
+                      </div>
+                    </div>
                   </div>
                 </article>
               </div>

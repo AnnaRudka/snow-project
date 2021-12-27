@@ -1,15 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  line-height: 1;
+  height: 100%;
+  font-family: "Work Sans"; }
+
+a:hover {
+  color: #00a2ff; }
+
+a:active {
+  color: #00a2ff;
+  font-weight: 500; }
+
+h2 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  line-height: 84px;
+  color: #171717;
+  font-weight: 700;
+  font-family: "Playfair Display"; }
+
 .header {
   background-color: #fff;
+  position: relative;
   height: 10rem;
   font-size: 1.4rem; }
+  .header__container {
+    display: flex; }
   .header__logo-box {
     padding-top: 3rem; }
   .header__logo {
     display: block; }
   .header__nav-box {
+    margin-left: auto;
     padding-top: 4rem; }
     .header__nav-box a {
       text-transform: uppercase; }
+  .header__nav-list {
+    display: flex; }
+  .header__nav-item {
+    flex: 1 0 auto;
+    width: 16.66666667%;
+    text-align: center; }
+  .header #nav-toggle {
+    display: none; }
+  @media (max-width: 767px) {
+    .header #nav-toggle {
+      opacity: 0; }
+    .header .header__nav-btn {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 4rem;
+      right: 3rem;
+      width: 2.6rem;
+      height: 2.6rem;
+      cursor: pointer;
+      z-index: 3; }
+    .header .header__nav-btn > span,
+    .header .header__nav-btn > span::before,
+    .header .header__nav-btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #4b4b4b; }
+    .header .header__nav-btn > span::before {
+      content: '';
+      top: -8px; }
+    .header .header__nav-btn > span::after {
+      content: '';
+      top: 8px; }
+    .header .header__nav-list {
+      display: block;
+      position: absolute;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 8rem 0;
+      list-style: none;
+      text-align: center;
+      background-color: #ebebeb;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.3);
+      z-index: 2; }
+    .header .header__nav-item {
+      display: block;
+      padding: 12px 24px;
+      color: #333;
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0; }
+    .header .header__nav-item:hover {
+      background-color: #CFD8DC; }
+    .header #nav-toggle:checked ~ .header__nav-btn > span {
+      transform: rotate(45deg); }
+    .header #nav-toggle:checked ~ .header__nav-btn > span::before {
+      top: 0;
+      transform: rotate(0); }
+    .header #nav-toggle:checked ~ .header__nav-btn > span::after {
+      top: 0;
+      transform: rotate(90deg); }
+    .header #nav-toggle:checked ~ .header__nav-list {
+      visibility: visible;
+      left: 0; } }
 
 section:nth-of-type(odd) {
   background-color: #ebebeb; }
@@ -62,14 +168,16 @@ section:nth-of-type(odd) {
   .post-comments article {
     padding: 0;
     margin: 0 auto; }
-  .post-comments-item__photo {
-    padding: 0.5rem;
-    background-color: gray;
-    border-radius: 50%;
-    width: 15%; }
-    .post-comments-item__photo img {
-      width: 100%;
-      border-radius: 50%; }
+  .post-comments comment {
+    width: 100%; }
+    .post-comments comment--photo {
+      padding: 0.5rem;
+      background-color: gray;
+      border-radius: 50%;
+      width: 15%; }
+      .post-comments comment--photo img {
+        width: 100%;
+        border-radius: 50%; }
 
 .post-new-comment {
   background-color: #ebebeb;
@@ -104,34 +212,3 @@ section:nth-of-type(odd) {
       font-size: 1.4rem;
       color: #4b4b4b;
       font-family: "Work Sans"; }
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  line-height: 1;
-  height: 100%;
-  font-family: "Work Sans"; }
-
-a:hover {
-  color: #00a2ff; }
-
-a:active {
-  color: #00a2ff;
-  font-weight: 500; }
-
-h2 {
-  font-size: 2.4rem;
-  letter-spacing: 1px;
-  line-height: 84px;
-  color: #171717;
-  font-weight: 700;
-  font-family: "Playfair Display"; }

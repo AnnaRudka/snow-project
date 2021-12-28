@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Work+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" 
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="bootstrap-grid.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -44,8 +48,8 @@
           </div>
           <section>
             <div class="container">
-              <div class="post-text row">
-                <article class="col-lg-8 col-md-10 col-sm-12">
+              <div class="row">
+                <article class="post-text col-lg-8 col-md-10 col-sm-12">
                   <h1>Why you should Always First</h1>
                   <div class="post-text__details">
                     <span class="post-text__details-item">May 25, 2016 </span>
@@ -86,37 +90,62 @@
               </div>
             </div>
           </section>
-          <section class="post-comments">
+          <section>
             <div class="container">
               <div class="row">
-                <article class="col-lg-8 col-md-10 col-sm-12">
+                <div class="post-comments col-lg-8 col-md-10 col-sm-12">
                   <h2>Comments:</h2>
-                  <div class="comment row">
-                    <div class="comment-photo class="col-lg-3 col-md-2 col-sm-2">
-                      <img  src="img/user1.jpg" alt="User1"></img>
+                  <article class="post-comments__item row">
+                    <div class="post-comments__item-photo col-sm-4 col-lg-3">
+                        <img  src="img/user1.jpg" alt="User1"></img>
                     </div>
-                    <div class="comment-content class="col-lg-9 col-md-10 col-sm-10">
-                      <div class="comment-content__details">
-                        <p>John Leonard</p>
-                        <p>May 31, 2016</p>
-                        <button type="button">reply</button>
+                    <div class="post-comments__item-content col-sm-8 col-lg-9">
+                      <div class="post-comments__details row">
+                        <p class="col-sm-6 col-lg-7">John Leonard</p>
+                        <p class="col-sm-4 col-lg-3">May 31, 2016</p>
+                        <button class="col-2" type="button">REPLY</button>
                       </div>
-                      <div class="comment-content__text">
+                      <div class="post-comments__text">
                         Nullam ac dui et purus malesuada gravida id fermentum orci. In eu ipsum quis urna 
                         hendrerit condimentum vitae a mauris. In congue turpis purus, vitae tempus ante
                         id. Donec orci arcu, sagittis ut finibus vitae.
                       </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                  <article class="post-comments__item post-comments__item--reply row">
+                    <div class="post-comments__item-photo col-sm-4 col-lg-3">
+                        <img  src="img/user2.jpg" alt="User2"></img>
+                    </div>
+                    <div class="post-comments__item-content col-sm-8 col-lg-9">
+                      <div class="post-comments__details row">
+                        <p class="col-sm-5 col-lg-6">Jody Parker</p>
+                        <p class="col-sm-5 col-lg-4">May 31, 2016</p>
+                        <button class="col-2" type="button">REPLY</button>
+                      </div>
+                      <div class="post-comments__text">
+                        Aenean eget varius augue, nec gravida lectus. Pellentesque in imperdiet
+                        us, ac efficitur risus. Etiam laoreet dapibus lorem vitae aliquam. Sed 
+                        elementum ligula, molestie consectetur massa rhoncus at.
+                      </div>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </section>
-          <section class="post-new-comment">
+          <section>
             <div class="container">
               <div class="row">
-                <article class="col-lg-8 col-md-10 col-sm-12">
+                <article class="post-comment col-lg-8 col-md-10 col-sm-12">
                   <h2>Leave a Comment:</h2>
+                  <form action="/url" method="post">
+                    <div class="post-comment__form">
+                    <input class="form-item" type="text" id="first-name" name="user_name" autocomplete="given-name" placeholder="Your Name"/>
+                    <input class="form-item" type="email" id="mail" name="user_email" autocomplete="email" placeholder="Your Email"/>
+                    </div>
+                    <textarea class="form-item" name="user_text" rows="10" placeholder="Your Comment"></textarea>
+                    <button class="post-comment__button" type="submit">Post a comment</button>
+                </form>
                 </article>
               </div>
             </div>
@@ -124,9 +153,9 @@
           <section>
             <div class="container">
               <div class="row post-navigation">
-                <div class="post-navigation__prev col-lg-5 col-md-5 col-sm-5"><a href="#">&#60; Previous post </a></div>
-                <div class="post-navigation__all col-lg-2 col-md-2 col-sm-2"><a href="#">&#11820; </a></div>
-                <div class="post-navigation__next col-lg-5 col-md-5 col-sm-5"><a href="#">Next post &#62;</a></div>
+                <div class="post-navigation__item post-navigation__item--prev col-md-5 col-sm-5"><a href="#">&#60;&nbsp;Previous&nbsp;post </a></div>
+                <div class="post-navigation__item post-navigation__item--all col-lg-2 col-md-2 col-sm-2"><a href="#">&#11820; </a></div>
+                <div class="post-navigation__item post-navigation__item--next col-md-5 col-sm-5"><a href="#">Next&nbsp;post&nbsp;&#62;</a></div>
               </div>
             </div> 
           </section>
@@ -134,17 +163,16 @@
       <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="footer-info col-lg-4 col-md-6 col-sm-12">
-              <div class="footer-info__contacts">        
-                <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
-                <span><a href="#"><i class="fab fa-twitter"></i></a></span>
-                <span><a href="#"><i class="fab fa-google"></i></span>
-                <span><a href="#"><i class="fab fa-behance"></i></a></span>
-                <span><a href="#"><i class="fab fa-pinterest"></i></a></span>
-                <!-- <span><a href="#"><i class="fab fa-instagram"></a></span> -->
+            <div class="footer-info col-md-6 col-sm-12">
+              <div class="footer-info__contacts">
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-google text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
               </div>
               <div class="footer-info__copyright">
-                <p>Copyright © 2016. Created by Unvab</p>
+                Copyright © 2016. Created by Unvab
               </div>
             </div>
           </div>

@@ -1,7 +1,12 @@
-.header{
+.header {
     background-color: $color-white;
     height: 10rem;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
     &__container {
         display: flex;
     }
@@ -24,8 +29,8 @@
     }
     &__nav-item {
         flex: 0 1 auto;
-        width: 16.66666667%;
         text-align: center;
+        padding-left: 15px;
     }
     #nav-toggle {
         display: none;
@@ -38,8 +43,8 @@
             display: flex;
             align-items: center;
             position: fixed;
-            top: 40px;
-            right: 30px;
+            top: 4rem;
+            right: 3rem;
             width: 26px;
             height: 26px;
             cursor: pointer;
@@ -85,7 +90,8 @@
             font-size: 20px;
             font-weight: 600;
             text-decoration: none;
-            margin: 0;
+            text-align: center;
+            width: 100%;
         }
         .header__nav-item:hover {
             background-color: #CFD8DC;

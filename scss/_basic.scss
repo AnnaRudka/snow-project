@@ -17,20 +17,37 @@ body {
     font-family: "Work Sans";
 }
 
-a:hover{
+a:hover {
     color: $color-blue; 
 }
 
-a:active{
+a:active {
     color: $color-blue;
     font-weight: 500;  
 }
 
-h2{
+h2 {
     font-size: 2.4rem;
     letter-spacing: 1px;
     line-height: 84px;
     color: #171717;
     font-weight: 700;
     font-family: "Playfair Display";
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+section:nth-of-type(odd) {
+    background-color: $color-grey-light;
 }

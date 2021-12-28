@@ -1,0 +1,61 @@
+.post-text {
+    padding: 8rem 0;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    & h1 {
+        font-size: 3.8rem;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-family: "Playfair Display";
+        padding-bottom: 2rem;
+    }
+    &__details {
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: "Work Sans";
+        text-transform: uppercase;
+        margin: 0;
+        &-item{
+            padding-right: 4rem;
+        }
+    }
+    &__content {
+        padding-top: 3rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        color: $color-text-grey-dark;
+        font-family: "Work Sans";
+        & p{
+            padding-bottom: 3rem;
+            margin: 0;
+        }
+        &-quote {
+            font-family: "Playfair Display";
+            font-style: italic;
+            font-size: 2rem;
+        }
+    }
+    &__contacts {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: "Work Sans";
+    }
+}
+
+@media (max-width: 768px) {
+    .post-text {
+        padding: 6rem 0;
+        & h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .post-text {
+        padding: 4rem 1.5rem;
+        & h1 {
+            font-size: 2.4rem;
+        }
+    }
+}

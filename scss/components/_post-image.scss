@@ -1,0 +1,8 @@
+.post-image {
+    margin-top: 10rem;
+    & img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
